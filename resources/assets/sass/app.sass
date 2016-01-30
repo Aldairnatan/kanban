@@ -1,0 +1,55 @@
+html, body
+  margin: 0
+  padding: 0
+  height: 100%
+  overflow: hidden
+  font-family: 'Roboto', sans-serif
+  font-size: 12px
+
+.Board
+  display: flex
+  overflow-x: scroll
+  height: 100%
+  background: #F6F7FB
+  overflow-y: hidden
+
+  @at-root
+  &__list
+    width: 250px
+    flex: none
+    display: flex
+    flex-direction: column
+
+    &--new-list
+      //
+
+  &__list__header
+    box-sizing: border-box
+    padding: 10px
+    width: 100%
+    text-align: center
+    font-weight: bold
+
+  &__list__body
+    overflow-y: scroll
+
+  &__list__card, &__card-placeholder
+    margin: 0 4px 0px
+    padding: 5px
+
+  &__list__card
+    border-width: 0 1px 1px 1px
+    border-style: solid
+    border-color: rgba(213, 220, 231, 0.43)
+    background: #fff
+    color: #6c6c6c
+    line-height: 18px
+
+    &:first-child
+      border-top: solid 1px rgba(213, 220, 231, 0.43)
+
+  &__card-placeholder
+    //
+
+  &:last-child
+    margin-bottom: 0

@@ -1,0 +1,51 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px; }
+
+.Board {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  height: 100%;
+  background: #F6F7FB;
+  overflow-y: hidden; }
+  .Board__list {
+    width: 250px;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .Board__list__header {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold; }
+  .Board__list__body {
+    overflow-y: scroll; }
+  .Board__list__card, .Board__card-placeholder {
+    margin: 0 4px 0px;
+    padding: 5px; }
+  .Board__list__card {
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: rgba(213, 220, 231, 0.43);
+    background: #fff;
+    color: #6c6c6c;
+    line-height: 18px; }
+    .Board__list__card:first-child {
+      border-top: solid 1px rgba(213, 220, 231, 0.43); }
+  .Board:last-child {
+    margin-bottom: 0; }
+
+/*# sourceMappingURL=app.css.map */

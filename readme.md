@@ -2,7 +2,7 @@
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 
-**Pico** is an open source KANBAN-style project management tool built on the top of [laravel framework](https://github.com/laravel/laravel) and using [Vue.js](https://github.com/vuejs/vue) for frontend work.
+**Kanban** is an open source project management tool built on the top of [laravel framework](https://github.com/laravel/laravel) and using [Vue.js](https://github.com/vuejs/vue) for frontend work.
 
 ### Plan
 

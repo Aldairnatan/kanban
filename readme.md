@@ -13,9 +13,8 @@
 - Authority control over list adding/removing/modifying cards
 - Toggle list viability per user
 - List/card due date
-- Card labels
+- List inline titles
 - Card assignee
-- Card members (watchers)
 - Card content in markdown with image/file uploads & code snippets with code highlight
 - Log for all board actions filterable by (user, card, date range, list)
 

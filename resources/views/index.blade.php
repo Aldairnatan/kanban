@@ -16,6 +16,7 @@
         $(function () {
             $(".Board").sortable({
                 handle: ".Board__list__header",
+                containment: ".Board",
                 axis: "x",
                 cursor: "move",
                 items: "> .Board__list:not(.Board__list--new-list)",
@@ -27,7 +28,7 @@
                 containment: ".Board",
                 cursor: "move",
                 distance: 5,
-                placeholder: "Board__card-placeholder",
+                placeholder: "Board__card--placeholder",
                 forcePlaceholderSize: true
             }).disableSelection();
         });
@@ -37,20 +38,66 @@
 <body>
 
 <div class="Board">
-    @foreach(range(1,9) as $i)
-        <div class="Board__list">
-            <div class="Board__list__header">
-                Backlog
-            </div>
-            <div class="Board__list__body">
-                @foreach(range(1,12) as $x)
-                    <div class="Board__list__card">
-                        Lorem ipsum dolor dit amit doleera dracarys kelitis.
-                    </div>
-                @endforeach
-            </div>
+
+
+    <div class="Board__list">
+        <div class="Board__list__header">
+            Backlog
         </div>
-    @endforeach
+        <div class="Board__list__body">
+            @foreach(range(1,3) as $x)
+                <div class="Board__card">
+                    Lorem ipsum dolor dit amit doleera dracarys kelitis.
+                    <div class="Board__card__info">
+                        <span class="Board__card__info__due">02-01</span>
+
+                        <div class="Board__card__info__member">
+                            <img src="http://lorempixel.com/150/150/people/9/" alt="">
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+            <div class="Board__cardTitle">
+                Owner Dashboard
+            </div>
+            <div class="Board__cardTitle">
+                Owner Dashboard
+            </div>
+            @foreach(range(1,3) as $x)
+                <div class="Board__card">
+                    Lorem ipsum dolor dit amit doleera.
+                    <div class="Board__card__info">
+                        <span class="Board__card__info__due">02-01</span>
+
+                        <div class="Board__card__info__member">
+                            <img src="http://lorempixel.com/150/150/people/9/" alt="">
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+
+    <div class="Board__list">
+        <div class="Board__list__header">
+            Backlog
+        </div>
+        <div class="Board__list__body">
+            @foreach(range(1,3) as $x)
+                <div class="Board__card">
+                    Lorem ipsum dolor dit amit doleera dracarys kelitis.
+                    <div class="Board__card__info">
+                        <div class="Board__card__info__member">
+                            <img src="http://lorempixel.com/150/150/people/9/" alt="">
+                        </div>
+                        <span class="Board__card__info__due">02-01</span>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+
+
     <div class="Board__list Board__list--new-list">
 
     </div>

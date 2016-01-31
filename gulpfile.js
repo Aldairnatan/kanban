@@ -4,7 +4,7 @@ elixir(function (mix) {
     mix
         .sass('app.sass')
         .browserSync({
-            proxy: 'eshta.app'
+            proxy: 'kanban.app'
         })
     ;
 

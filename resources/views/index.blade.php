@@ -47,12 +47,18 @@
         <div class="Board__list__body">
             @foreach(range(1,3) as $x)
                 <div class="Board__card">
-                    Lorem ipsum dolor dit amit doleera dracarys kelitis.
-                    <div class="Board__card__info">
-                        <span class="Board__card__info__due">02-01</span>
+                    <a href="#" class="Board__card__add">+</a>
 
-                        <div class="Board__card__info__member">
+                    <div class="Board__card__member">
+                        <div class="Board__card__member__wrapper">
                             <img src="http://lorempixel.com/150/150/people/9/" alt="">
+                        </div>
+                    </div>
+                    <div class="Board__card__desc">
+                        <span>Lorem ipsum dolor dit amit doleera dracarys kelitis.</span>
+
+                        <div class="Board__card__info">
+                            <span class="Board__card__info__due">02-01</span>
                         </div>
                     </div>
                 </div>
@@ -60,43 +66,8 @@
             <div class="Board__cardTitle">
                 Owner Dashboard
             </div>
-            <div class="Board__cardTitle">
-                Owner Dashboard
-            </div>
-            @foreach(range(1,3) as $x)
-                <div class="Board__card">
-                    Lorem ipsum dolor dit amit doleera.
-                    <div class="Board__card__info">
-                        <span class="Board__card__info__due">02-01</span>
-
-                        <div class="Board__card__info__member">
-                            <img src="http://lorempixel.com/150/150/people/9/" alt="">
-                        </div>
-                    </div>
-                </div>
-            @endforeach
         </div>
     </div>
-
-    <div class="Board__list">
-        <div class="Board__list__header">
-            Backlog
-        </div>
-        <div class="Board__list__body">
-            @foreach(range(1,3) as $x)
-                <div class="Board__card">
-                    Lorem ipsum dolor dit amit doleera dracarys kelitis.
-                    <div class="Board__card__info">
-                        <div class="Board__card__info__member">
-                            <img src="http://lorempixel.com/150/150/people/9/" alt="">
-                        </div>
-                        <span class="Board__card__info__due">02-01</span>
-                    </div>
-                </div>
-            @endforeach
-        </div>
-    </div>
-
 
     <div class="Board__list Board__list--new-list">
 

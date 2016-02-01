@@ -6,7 +6,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="{{url('css/normalize.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url('css/libs.css')}}">
     <link rel="stylesheet" type="text/css" href="{{url('css/app.css')}}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>

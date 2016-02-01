@@ -28,12 +28,30 @@ html, body {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; }
+    .Board__list--new-list input {
+      border: none;
+      background: transparent;
+      padding: 10px;
+      width: 100%;
+      font-weight: bold;
+      color: #000;
+      outline: none;
+      text-align: center;
+      font-size: 100%; }
   .Board__list__header {
-    box-sizing: border-box;
     padding: 10px;
     width: 100%;
     text-align: center;
-    font-weight: bold; }
+    font-weight: bold;
+    position: relative; }
+    .Board__list__header__settings {
+      position: absolute;
+      right: 10px;
+      margin-left: 5px;
+      color: #757575;
+      opacity: .5; }
+      .Board__list__header__settings:hover {
+        opacity: 1; }
   .Board__list__body {
     overflow-y: scroll;
     padding-bottom: 10px; }
@@ -51,13 +69,20 @@ html, body {
     border-radius: 2px;
     transition: box-shadow 300ms ease;
     background: #fff;
-    color: #818B98;
+    color: #646c76;
     line-height: 18px;
     position: relative;
     font-size: 85%;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+    .Board__card--new-card input {
+      border: none;
+      background: transparent;
+      width: 100%;
+      line-height: 30px;
+      outline: none;
+      color: #3c4147; }
     .Board__card__add {
       text-decoration: none;
       opacity: 0;
@@ -73,7 +98,7 @@ html, body {
       height: 22px;
       text-align: center;
       vertical-align: middle;
-      transition: opacity 0s ease-in-out 0.1s; }
+      transition: opacity 0s ease-in-out 0.2s; }
     .Board__card:hover .Board__card__add {
       opacity: 1; }
     .Board__card__member {

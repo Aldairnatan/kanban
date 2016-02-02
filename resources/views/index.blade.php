@@ -23,7 +23,7 @@
                 cursor: "move",
                 items: "> .Board__list:not(.Board__list--new-list)",
                 distance: 5
-            }).disableSelection();
+            });
 
             $(".Board__list__body").sortable({
                 connectWith: ".Board__list__body",
@@ -33,7 +33,7 @@
                 items: "> .Board__card:not(.Board__card--new-card)",
                 placeholder: "Board__card--placeholder",
                 forcePlaceholderSize: true
-            }).disableSelection();
+            });
         });
     </script>
 

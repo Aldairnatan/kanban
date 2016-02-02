@@ -51,7 +51,7 @@
         <div class="Board__list__body">
             @foreach(range(1,3) as $x)
                 <div class="Board__card">
-                    <a href="#" class="Board__card__add">+</a>
+                    <a href="#" class="Board__card__add"><span>+</span></a>
 
                     <div class="Board__card__member">
                         <div class="Board__card__member__wrapper">
@@ -72,7 +72,7 @@
             </div>
             @foreach(range(1,3) as $x)
                 <div class="Board__card">
-                    <a href="#" class="Board__card__add">+</a>
+                    <a href="#" class="Board__card__add"><span>+</span></a>
 
                     <div class="Board__card__member">
                         <div class="Board__card__member__wrapper">
@@ -102,7 +102,7 @@
             </div>
             @foreach(range(1,4) as $x)
                 <div class="Board__card">
-                    <a href="#" class="Board__card__add">+</a>
+                    <a href="#" class="Board__card__add"><span>+</span></a>
 
                     <div class="Board__card__member">
                         <div class="Board__card__member__wrapper">

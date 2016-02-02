@@ -55,12 +55,6 @@ html, body {
   .Board__list__body {
     overflow-y: scroll;
     padding-bottom: 10px; }
-  .Board__cardTitle {
-    box-sizing: border-box;
-    height: 40px;
-    padding: 19px 8px 7px;
-    font-weight: bold;
-    font-size: 80%; }
   .Board__card, .Board__card--placeholder {
     margin: 0 8px 10px;
     padding: 6px; }
@@ -76,6 +70,18 @@ html, body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+    .Board__card--title {
+      box-shadow: none;
+      background: transparent;
+      height: 30px; }
+      .Board__card--title span {
+        position: absolute;
+        bottom: -5px;
+        left: 0px;
+        font-weight: bold;
+        font-size: 100%; }
+      .Board__card--title:first-child {
+        height: 15px; }
     .Board__card--new-card input {
       border: none;
       background: transparent;

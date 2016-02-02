@@ -23,7 +23,7 @@
                 cursor: "move",
                 items: "> .Board__list:not(.Board__list--new-list)",
                 distance: 5
-            });
+            }).disableSelection();
 
             $(".Board__list__body").sortable({
                 connectWith: ".Board__list__body",
@@ -33,7 +33,7 @@
                 items: "> .Board__card:not(.Board__card--new-card)",
                 placeholder: "Board__card--placeholder",
                 forcePlaceholderSize: true
-            });
+            }).disableSelection();
         });
     </script>
 
@@ -67,8 +67,8 @@
                     </div>
                 </div>
             @endforeach
-            <div class="Board__cardTitle">
-                Owner Dashboard
+            <div class="Board__card Board__card--title">
+                <span>Owner Dashboard</span>
             </div>
             @foreach(range(1,3) as $x)
                 <div class="Board__card">
@@ -97,6 +97,9 @@
             <a href="#" class="Board__list__header__settings"><i class="fa fa-gear"></i></a>
         </div>
         <div class="Board__list__body">
+            <div class="Board__card Board__card--title">
+                <span>Owner Dashboard</span>
+            </div>
             @foreach(range(1,4) as $x)
                 <div class="Board__card">
                     <a href="#" class="Board__card__add">+</a>

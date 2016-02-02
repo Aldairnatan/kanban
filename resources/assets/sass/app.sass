@@ -57,13 +57,6 @@ html, body
     overflow-y: scroll
     padding-bottom: 10px
 
-  &__cardTitle
-    box-sizing: border-box
-    height: 40px
-    padding: 19px 8px 7px
-    font-weight: bold
-    font-size: 80%
-
   &__card, &__card--placeholder
     margin: 0 8px 10px
     padding: 6px
@@ -78,6 +71,21 @@ html, body
     position: relative
     font-size: 85%
     display: flex
+
+    &--title
+      box-shadow: none
+      background: transparent
+      height: 30px
+
+      span
+        position: absolute
+        bottom: -5px
+        left: 0px
+        font-weight: bold
+        font-size: 100%
+
+      &:first-child
+        height: 15px
 
     &--new-card
 

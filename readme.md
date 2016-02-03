@@ -6,20 +6,22 @@
 
 ### Plan
 
-- Multiple projects
-- Multiple users with roles
+- Multiple Boards
+- Connect cards between boards
+- Multiple users
 - Styling options for (Board, List, Card)
-- Authorities for (Project, Board, List)
 - Authority control over list adding/removing/modifying cards
-- Toggle list viability per user
-- List/card due date
-- List inline titles
+- Authority over creating lists
+- Toggle list visibility per user
+- Card due date
+- List inline titles (separators)
 - Card assignee
 - Card content in markdown with image/file uploads & code snippets with code highlight
 - Log for all board actions filterable by (user, card, date range, list)
 
 ### Future
 
+- If (action) then (action)
 - Control using keyboard only
 - Slack bot
 - Time line view for cards status change

@@ -38,23 +38,23 @@ html, body {
       outline: none;
       text-align: center;
       font-size: 100%; }
-  .Board__list__header {
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    position: relative; }
-    .Board__list__header__settings {
-      position: absolute;
-      right: 10px;
-      margin-left: 5px;
-      color: #757575;
-      opacity: .5; }
-      .Board__list__header__settings:hover {
-        opacity: 1; }
-  .Board__list__body {
-    overflow-y: scroll;
-    padding-bottom: 10px; }
+    .Board__list__header {
+      padding: 10px;
+      width: 100%;
+      text-align: center;
+      font-weight: bold;
+      position: relative; }
+      .Board__list__header__settings {
+        position: absolute;
+        right: 10px;
+        margin-left: 5px;
+        color: #757575;
+        opacity: .5; }
+        .Board__list__header__settings:hover {
+          opacity: 1; }
+    .Board__list__body {
+      overflow-y: scroll;
+      padding-bottom: 10px; }
   .Board__card, .Board__card--placeholder {
     margin: 0 8px 10px;
     padding: 6px; }

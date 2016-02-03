@@ -1,5 +1,7 @@
 /vendor
 /.idea
+*.sublime-project
+*.sublime-workspace
 /node_modules
 Homestead.yaml
 Homestead.json

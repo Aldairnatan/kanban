@@ -16,22 +16,22 @@
 
     <script>
         $(function () {
-            $(".Board").sortable({
-                handle: ".Board__list__header",
-                containment: ".Board",
+            $(".board").sortable({
+                handle: ".board__list__header",
+                containment: ".board",
                 axis: "x",
                 cursor: "move",
-                items: "> .Board__list:not(.Board__list--new-list)",
+                items: "> .board__list:not(.board__list--new-list)",
                 distance: 5
             }).disableSelection();
 
-            $(".Board__list__body").sortable({
-                connectWith: ".Board__list__body",
-                containment: ".Board",
+            $(".board__list__body").sortable({
+                connectWith: ".board__list__body",
+                containment: ".board",
                 cursor: "move",
                 distance: 5,
-                items: "> .Board__card:not(.Board__card--new-card)",
-                placeholder: "Board__card--placeholder",
+                items: "> .board__card:not(.board__card--new-card)",
+                placeholder: "board__card--placeholder",
                 forcePlaceholderSize: true
             }).disableSelection();
         });
@@ -40,104 +40,10 @@
 </head>
 <body>
 
-<div class="Board">
-
-
-    <div class="Board__list">
-        <div class="Board__list__header">
-            Backlog
-            <a href="#" class="Board__list__header__settings"><i class="fa fa-gear"></i></a>
-        </div>
-        <div class="Board__list__body">
-            @foreach(range(1,3) as $x)
-                <div class="Board__card">
-                    <a href="#" class="Board__card__add"><span>+</span></a>
-
-                    <div class="Board__card__member">
-                        <div class="Board__card__member__wrapper">
-                            <img src="http://lorempixel.com/150/150/people/9/" alt="">
-                        </div>
-                    </div>
-                    <div class="Board__card__desc">
-                        <span>Lorem ipsum dolor dit amit doleera dracarys kelitis.</span>
-
-                        <div class="Board__card__info">
-                            <span class="Board__card__info__due">02-01</span>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
-            <div class="Board__card Board__card--title">
-                <span>Owner Dashboard</span>
-            </div>
-            @foreach(range(1,3) as $x)
-                <div class="Board__card">
-                    <a href="#" class="Board__card__add"><span>+</span></a>
-
-                    <div class="Board__card__member">
-                        <div class="Board__card__member__wrapper">
-                            <img src="http://lorempixel.com/150/150/people/9/" alt="">
-                        </div>
-                    </div>
-                    <div class="Board__card__desc">
-                        <span>Lorem ipsum dolor dit amit doleera dracarys kelitis.</span>
-
-                        <div class="Board__card__info">
-                            <span class="Board__card__info__due">02-01</span>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
-        </div>
-    </div>
-
-    <div class="Board__list">
-        <div class="Board__list__header">
-            Backlog
-            <a href="#" class="Board__list__header__settings"><i class="fa fa-gear"></i></a>
-        </div>
-        <div class="Board__list__body">
-            <div class="Board__card Board__card--title">
-                <span>Owner Dashboard</span>
-            </div>
-            @foreach(range(1,4) as $x)
-                <div class="Board__card">
-                    <a href="#" class="Board__card__add"><span>+</span></a>
-
-                    <div class="Board__card__member">
-                        <div class="Board__card__member__wrapper">
-                            <img src="http://lorempixel.com/150/150/people/9/" alt="">
-                        </div>
-                    </div>
-                    <div class="Board__card__desc">
-                        <span>Lorem ipsum dolor dit amit doleera dracarys kelitis.</span>
-
-                        <div class="Board__card__info">
-                            <span class="Board__card__info__due">02-01</span>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
-        </div>
-    </div>
-
-    <div class="Board__list">
-        <div class="Board__list__header">
-            Backlog
-            <a href="#" class="Board__list__header__settings"><i class="fa fa-gear"></i></a>
-        </div>
-        <div class="Board__list__body">
-            <div class="Board__card Board__card--new-card">
-                <input type="text" placeholder="New item">
-            </div>
-        </div>
-    </div>
-
-    <div class="Board__list Board__list--new-list">
-        <input type="text" placeholder="New List">
-    </div>
-
+<div id="boardWrapper">
+    <board></board>
 </div>
 
+<script src="{{asset('js/main.js')}}"></script>
 </body>
 </html>

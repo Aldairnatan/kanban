@@ -3,13 +3,13 @@
 </script>
 
 <template>
-    <div class="board__list board__list--new-list">
+    <div class="board__list board__list--new--list">
         <input type="text" placeholder="New List">
     </div>
 </template>
 
 <style lang="sass">
-    .board__list--new-list {
+    .board__list--new--list {
         input {
             border: none;
             background: transparent;

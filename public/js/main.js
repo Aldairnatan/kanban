@@ -10044,7 +10044,7 @@ if (module.hot) {(function () {  module.hot.accept()
     hotAPI.update(id, module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
   }
 })()}
-},{"./components/board-list-new.vue":8,"./components/board-list.vue":9,"vue":3,"vue-hot-reload-api":2,"vueify-insert-css":4}],6:[function(require,module,exports){
+},{"./components/board-list-new.vue":9,"./components/board-list.vue":10,"vue":3,"vue-hot-reload-api":2,"vueify-insert-css":4}],6:[function(require,module,exports){
 var __vueify_style__ = require("vueify-insert-css").insert("/* line 3, stdin */\n.board__card--new-card input {\n  border: none;\n  background: transparent;\n  width: 100%;\n  line-height: 30px;\n  outline: none;\n  color: #3c4147; }\n")
 "use strict";
 
@@ -10070,24 +10070,22 @@ if (module.hot) {(function () {  module.hot.accept()
   }
 })()}
 },{"vue":3,"vue-hot-reload-api":2,"vueify-insert-css":4}],7:[function(require,module,exports){
-var __vueify_style__ = require("vueify-insert-css").insert("/* line 2, stdin */\n.board__card, .board__card--placeholder {\n  margin: 0 8px 10px;\n  padding: 6px; }\n\n/* line 7, stdin */\n.board__card {\n  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.1);\n  border-radius: 2px;\n  -webkit-transition: box-shadow 300ms ease;\n  transition: box-shadow 300ms ease;\n  background: white;\n  color: #646c76;\n  line-height: 18px;\n  position: relative;\n  font-size: 85%;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex; }\n  /* line 18, stdin */\n  .board__card--title {\n    box-shadow: none;\n    background: transparent;\n    height: 30px; }\n    /* line 22, stdin */\n    .board__card--title span {\n      position: absolute;\n      bottom: -5px;\n      left: 0px;\n      font-weight: bold;\n      font-size: 100%; }\n    /* line 29, stdin */\n    .board__card--title:first-child {\n      height: 15px; }\n  /* line 33, stdin */\n  .board__card__add {\n    box-sizing: content-box;\n    opacity: 0;\n    text-decoration: none;\n    bottom: -20px;\n    z-index: 9;\n    right: 0;\n    width: 22px;\n    height: 22px;\n    line-height: 22px;\n    text-align: center;\n    vertical-align: middle;\n    position: absolute;\n    padding-bottom: 5px;\n    -webkit-transition: opacity 0s ease-in-out 0.1s;\n    transition: opacity 0s ease-in-out 0.1s; }\n    /* line 48, stdin */\n    .board__card__add span {\n      width: 100%;\n      display: block;\n      background: #4ca84b;\n      border-radius: 50%;\n      color: white; }\n  /* line 56, stdin */\n  .board__card:hover .board__card__add {\n    opacity: 1; }\n  /* line 59, stdin */\n  .board__card__member {\n    -webkit-box-flex: 1;\n    -webkit-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center; }\n    /* line 63, stdin */\n    .board__card__member__wrapper {\n      position: relative;\n      overflow: hidden;\n      border-radius: 50%;\n      text-align: center;\n      background-color: white;\n      border: solid 1px #e8e8e8;\n      padding: 3px;\n      display: -webkit-box;\n      display: -webkit-flex;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n      -webkit-align-items: center;\n          -ms-flex-align: center;\n              align-items: center; }\n      /* line 73, stdin */\n      .board__card__member__wrapper img {\n        width: 100%;\n        border-radius: 50%;\n        vertical-align: top;\n        display: block; }\n  /* line 81, stdin */\n  .board__card__desc {\n    -webkit-box-flex: 6;\n    -webkit-flex: 6;\n        -ms-flex: 6;\n            flex: 6;\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: center;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    padding-left: 6px; }\n  /* line 88, stdin */\n  .board__card__info {\n    margin-bottom: 1px; }\n    /* line 90, stdin */\n    .board__card__info__due {\n      border: solid 1px #4ca84b;\n      color: #4ca84b;\n      display: inline-block;\n      border-radius: 2px;\n      font-size: 70%;\n      font-weight: bold;\n      padding: 1px 2px;\n      text-align: center;\n      line-height: 1;\n      vertical-align: bottom; }\n  /* line 103, stdin */\n  .board__card:last-child {\n    margin-bottom: 0; }\n")
-'use strict';
+var __vueify_style__ = require("vueify-insert-css").insert("/* line 2, stdin */\n.board__card--title {\n  box-shadow: none;\n  background: transparent;\n  height: 30px; }\n  /* line 6, stdin */\n  .board__card--title span {\n    position: absolute;\n    bottom: -5px;\n    left: 0px;\n    font-weight: bold;\n    font-size: 100%; }\n  /* line 13, stdin */\n  .board__card--title:first-child {\n    height: 15px; }\n")
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
-exports.default = {
-    props: ['type']
-};
+exports.default = {};
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"board__card board__card--title\" v-if=\"type == 'title'\">\n    <span>Owner Dashboard</span>\n</div>\n\n<div class=\"board__card\" v-else=\"\">\n    <a href=\"#\" class=\"board__card__add\"><span>+</span></a>\n\n    <div class=\"board__card__member\">\n        <div class=\"board__card__member__wrapper\">\n            <img src=\"http://lorempixel.com/150/150/people/9/\" alt=\"\">\n        </div>\n    </div>\n    <div class=\"board__card__desc\">\n        <span>Lorem ipsum dolor dit amit doleera dracarys kelitis.</span>\n\n        <div class=\"board__card__info\">\n            <span class=\"board__card__info__due\">02-01</span>\n        </div>\n    </div>\n</div>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"board__card board__card--title\">\n    <span>Owner Dashboard</span>\n</div>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
-  var id = "/Users/mac/Websites/kanban/resources/assets/js/board/components/board-card.vue"
+  var id = "/Users/mac/Websites/kanban/resources/assets/js/board/components/board-card-title.vue"
   module.hot.dispose(function () {
-    require("vueify-insert-css").cache["/* line 2, stdin */\n.board__card, .board__card--placeholder {\n  margin: 0 8px 10px;\n  padding: 6px; }\n\n/* line 7, stdin */\n.board__card {\n  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.1);\n  border-radius: 2px;\n  -webkit-transition: box-shadow 300ms ease;\n  transition: box-shadow 300ms ease;\n  background: white;\n  color: #646c76;\n  line-height: 18px;\n  position: relative;\n  font-size: 85%;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex; }\n  /* line 18, stdin */\n  .board__card--title {\n    box-shadow: none;\n    background: transparent;\n    height: 30px; }\n    /* line 22, stdin */\n    .board__card--title span {\n      position: absolute;\n      bottom: -5px;\n      left: 0px;\n      font-weight: bold;\n      font-size: 100%; }\n    /* line 29, stdin */\n    .board__card--title:first-child {\n      height: 15px; }\n  /* line 33, stdin */\n  .board__card__add {\n    box-sizing: content-box;\n    opacity: 0;\n    text-decoration: none;\n    bottom: -20px;\n    z-index: 9;\n    right: 0;\n    width: 22px;\n    height: 22px;\n    line-height: 22px;\n    text-align: center;\n    vertical-align: middle;\n    position: absolute;\n    padding-bottom: 5px;\n    -webkit-transition: opacity 0s ease-in-out 0.1s;\n    transition: opacity 0s ease-in-out 0.1s; }\n    /* line 48, stdin */\n    .board__card__add span {\n      width: 100%;\n      display: block;\n      background: #4ca84b;\n      border-radius: 50%;\n      color: white; }\n  /* line 56, stdin */\n  .board__card:hover .board__card__add {\n    opacity: 1; }\n  /* line 59, stdin */\n  .board__card__member {\n    -webkit-box-flex: 1;\n    -webkit-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center; }\n    /* line 63, stdin */\n    .board__card__member__wrapper {\n      position: relative;\n      overflow: hidden;\n      border-radius: 50%;\n      text-align: center;\n      background-color: white;\n      border: solid 1px #e8e8e8;\n      padding: 3px;\n      display: -webkit-box;\n      display: -webkit-flex;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n      -webkit-align-items: center;\n          -ms-flex-align: center;\n              align-items: center; }\n      /* line 73, stdin */\n      .board__card__member__wrapper img {\n        width: 100%;\n        border-radius: 50%;\n        vertical-align: top;\n        display: block; }\n  /* line 81, stdin */\n  .board__card__desc {\n    -webkit-box-flex: 6;\n    -webkit-flex: 6;\n        -ms-flex: 6;\n            flex: 6;\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: center;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    padding-left: 6px; }\n  /* line 88, stdin */\n  .board__card__info {\n    margin-bottom: 1px; }\n    /* line 90, stdin */\n    .board__card__info__due {\n      border: solid 1px #4ca84b;\n      color: #4ca84b;\n      display: inline-block;\n      border-radius: 2px;\n      font-size: 70%;\n      font-weight: bold;\n      padding: 1px 2px;\n      text-align: center;\n      line-height: 1;\n      vertical-align: bottom; }\n  /* line 103, stdin */\n  .board__card:last-child {\n    margin-bottom: 0; }\n"] = false
+    require("vueify-insert-css").cache["/* line 2, stdin */\n.board__card--title {\n  box-shadow: none;\n  background: transparent;\n  height: 30px; }\n  /* line 6, stdin */\n  .board__card--title span {\n    position: absolute;\n    bottom: -5px;\n    left: 0px;\n    font-weight: bold;\n    font-size: 100%; }\n  /* line 13, stdin */\n  .board__card--title:first-child {\n    height: 15px; }\n"] = false
     document.head.removeChild(__vueify_style__)
   })
   if (!module.hot.data) {
@@ -10097,7 +10095,7 @@ if (module.hot) {(function () {  module.hot.accept()
   }
 })()}
 },{"vue":3,"vue-hot-reload-api":2,"vueify-insert-css":4}],8:[function(require,module,exports){
-var __vueify_style__ = require("vueify-insert-css").insert("/* line 3, stdin */\n.board__list--new-list input {\n  border: none;\n  background: transparent;\n  padding: 10px;\n  width: 100%;\n  font-weight: bold;\n  color: black;\n  outline: none;\n  text-align: center;\n  font-size: 100%; }\n")
+var __vueify_style__ = require("vueify-insert-css").insert("/* line 2, stdin */\n.board__card, .board__card--placeholder {\n  margin: 0 8px 10px;\n  padding: 6px; }\n\n/* line 7, stdin */\n.board__card {\n  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.1);\n  border-radius: 2px;\n  -webkit-transition: box-shadow 300ms ease;\n  transition: box-shadow 300ms ease;\n  background: white;\n  color: #646c76;\n  line-height: 18px;\n  position: relative;\n  font-size: 85%;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex; }\n  /* line 18, stdin */\n  .board__card__add {\n    box-sizing: content-box;\n    opacity: 0;\n    text-decoration: none;\n    bottom: -20px;\n    z-index: 9;\n    right: 0;\n    width: 22px;\n    height: 22px;\n    line-height: 22px;\n    text-align: center;\n    vertical-align: middle;\n    position: absolute;\n    padding-bottom: 5px;\n    -webkit-transition: opacity 0s ease-in-out 0.1s;\n    transition: opacity 0s ease-in-out 0.1s; }\n    /* line 33, stdin */\n    .board__card__add span {\n      width: 100%;\n      display: block;\n      background: #4ca84b;\n      border-radius: 50%;\n      color: white; }\n  /* line 41, stdin */\n  .board__card:hover .board__card__add {\n    opacity: 1; }\n  /* line 44, stdin */\n  .board__card__member {\n    -webkit-box-flex: 1;\n    -webkit-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center; }\n    /* line 48, stdin */\n    .board__card__member__wrapper {\n      position: relative;\n      overflow: hidden;\n      border-radius: 50%;\n      text-align: center;\n      background-color: white;\n      border: solid 1px #e8e8e8;\n      padding: 3px;\n      display: -webkit-box;\n      display: -webkit-flex;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n      -webkit-align-items: center;\n          -ms-flex-align: center;\n              align-items: center; }\n      /* line 58, stdin */\n      .board__card__member__wrapper img {\n        width: 100%;\n        border-radius: 50%;\n        vertical-align: top;\n        display: block; }\n  /* line 66, stdin */\n  .board__card__desc {\n    -webkit-box-flex: 6;\n    -webkit-flex: 6;\n        -ms-flex: 6;\n            flex: 6;\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: center;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    padding-left: 6px; }\n  /* line 73, stdin */\n  .board__card__info {\n    margin-bottom: 1px; }\n    /* line 75, stdin */\n    .board__card__info__due {\n      border: solid 1px #4ca84b;\n      color: #4ca84b;\n      display: inline-block;\n      border-radius: 2px;\n      font-size: 70%;\n      font-weight: bold;\n      padding: 1px 2px;\n      text-align: center;\n      line-height: 1;\n      vertical-align: bottom; }\n  /* line 88, stdin */\n  .board__card:last-child {\n    margin-bottom: 0; }\n")
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10105,14 +10103,14 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {};
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"board__list board__list--new-list\">\n    <input type=\"text\" placeholder=\"New List\">\n</div>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"board__card\">\n    <a href=\"#\" class=\"board__card__add\"><span>+</span></a>\n\n    <div class=\"board__card__member\">\n        <div class=\"board__card__member__wrapper\">\n            <img src=\"http://lorempixel.com/150/150/people/9/\" alt=\"\">\n        </div>\n    </div>\n\n    <div class=\"board__card__desc\">\n        <span>Lorem ipsum dolor dit amit doleera dracarys kelitis.</span>\n\n        <div class=\"board__card__info\">\n            <span class=\"board__card__info__due\">02-01</span>\n        </div>\n    </div>\n</div>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
-  var id = "/Users/mac/Websites/kanban/resources/assets/js/board/components/board-list-new.vue"
+  var id = "/Users/mac/Websites/kanban/resources/assets/js/board/components/board-card.vue"
   module.hot.dispose(function () {
-    require("vueify-insert-css").cache["/* line 3, stdin */\n.board__list--new-list input {\n  border: none;\n  background: transparent;\n  padding: 10px;\n  width: 100%;\n  font-weight: bold;\n  color: black;\n  outline: none;\n  text-align: center;\n  font-size: 100%; }\n"] = false
+    require("vueify-insert-css").cache["/* line 2, stdin */\n.board__card, .board__card--placeholder {\n  margin: 0 8px 10px;\n  padding: 6px; }\n\n/* line 7, stdin */\n.board__card {\n  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.1);\n  border-radius: 2px;\n  -webkit-transition: box-shadow 300ms ease;\n  transition: box-shadow 300ms ease;\n  background: white;\n  color: #646c76;\n  line-height: 18px;\n  position: relative;\n  font-size: 85%;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex; }\n  /* line 18, stdin */\n  .board__card__add {\n    box-sizing: content-box;\n    opacity: 0;\n    text-decoration: none;\n    bottom: -20px;\n    z-index: 9;\n    right: 0;\n    width: 22px;\n    height: 22px;\n    line-height: 22px;\n    text-align: center;\n    vertical-align: middle;\n    position: absolute;\n    padding-bottom: 5px;\n    -webkit-transition: opacity 0s ease-in-out 0.1s;\n    transition: opacity 0s ease-in-out 0.1s; }\n    /* line 33, stdin */\n    .board__card__add span {\n      width: 100%;\n      display: block;\n      background: #4ca84b;\n      border-radius: 50%;\n      color: white; }\n  /* line 41, stdin */\n  .board__card:hover .board__card__add {\n    opacity: 1; }\n  /* line 44, stdin */\n  .board__card__member {\n    -webkit-box-flex: 1;\n    -webkit-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center; }\n    /* line 48, stdin */\n    .board__card__member__wrapper {\n      position: relative;\n      overflow: hidden;\n      border-radius: 50%;\n      text-align: center;\n      background-color: white;\n      border: solid 1px #e8e8e8;\n      padding: 3px;\n      display: -webkit-box;\n      display: -webkit-flex;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n      -webkit-align-items: center;\n          -ms-flex-align: center;\n              align-items: center; }\n      /* line 58, stdin */\n      .board__card__member__wrapper img {\n        width: 100%;\n        border-radius: 50%;\n        vertical-align: top;\n        display: block; }\n  /* line 66, stdin */\n  .board__card__desc {\n    -webkit-box-flex: 6;\n    -webkit-flex: 6;\n        -ms-flex: 6;\n            flex: 6;\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: center;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    padding-left: 6px; }\n  /* line 73, stdin */\n  .board__card__info {\n    margin-bottom: 1px; }\n    /* line 75, stdin */\n    .board__card__info__due {\n      border: solid 1px #4ca84b;\n      color: #4ca84b;\n      display: inline-block;\n      border-radius: 2px;\n      font-size: 70%;\n      font-weight: bold;\n      padding: 1px 2px;\n      text-align: center;\n      line-height: 1;\n      vertical-align: bottom; }\n  /* line 88, stdin */\n  .board__card:last-child {\n    margin-bottom: 0; }\n"] = false
     document.head.removeChild(__vueify_style__)
   })
   if (!module.hot.data) {
@@ -10122,6 +10120,31 @@ if (module.hot) {(function () {  module.hot.accept()
   }
 })()}
 },{"vue":3,"vue-hot-reload-api":2,"vueify-insert-css":4}],9:[function(require,module,exports){
+var __vueify_style__ = require("vueify-insert-css").insert("/* line 3, stdin */\n.board__list--new--list input {\n  border: none;\n  background: transparent;\n  padding: 10px;\n  width: 100%;\n  font-weight: bold;\n  color: black;\n  outline: none;\n  text-align: center;\n  font-size: 100%; }\n")
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = {};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"board__list board__list--new--list\">\n    <input type=\"text\" placeholder=\"New List\">\n</div>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  var id = "/Users/mac/Websites/kanban/resources/assets/js/board/components/board-list-new.vue"
+  module.hot.dispose(function () {
+    require("vueify-insert-css").cache["/* line 3, stdin */\n.board__list--new--list input {\n  border: none;\n  background: transparent;\n  padding: 10px;\n  width: 100%;\n  font-weight: bold;\n  color: black;\n  outline: none;\n  text-align: center;\n  font-size: 100%; }\n"] = false
+    document.head.removeChild(__vueify_style__)
+  })
+  if (!module.hot.data) {
+    hotAPI.createRecord(id, module.exports)
+  } else {
+    hotAPI.update(id, module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2,"vueify-insert-css":4}],10:[function(require,module,exports){
 var __vueify_style__ = require("vueify-insert-css").insert("/* line 2, stdin */\n.board__list {\n  width: 300px;\n  -webkit-box-flex: 0;\n  -webkit-flex: none;\n      -ms-flex: none;\n          flex: none;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: column;\n      -ms-flex-direction: column;\n          flex-direction: column; }\n  /* line 7, stdin */\n  .board__list__header {\n    padding: 10px;\n    width: 100%;\n    text-align: center;\n    font-weight: bold;\n    position: relative; }\n    /* line 13, stdin */\n    .board__list__header__settings {\n      position: absolute;\n      right: 10px;\n      margin-left: 5px;\n      color: #757575;\n      opacity: 0.5; }\n      /* line 19, stdin */\n      .board__list__header__settings:hover {\n        opacity: 1; }\n  /* line 24, stdin */\n  .board__list__body {\n    overflow-y: scroll;\n    padding-bottom: 10px; }\n")
 'use strict';
 
@@ -10137,13 +10160,17 @@ var _boardCardNew = require('./board-card-new.vue');
 
 var _boardCardNew2 = _interopRequireDefault(_boardCardNew);
 
+var _boardCardTitle = require('./board-card-title.vue');
+
+var _boardCardTitle2 = _interopRequireDefault(_boardCardTitle);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
-    components: { BoardCard: _boardCard2.default, BoardCardNew: _boardCardNew2.default }
+    components: { Card: _boardCard2.default, NewCard: _boardCardNew2.default, Title: _boardCardTitle2.default }
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"board__list\">\n    <div class=\"board__list__header\">\n        Backlog\n        <a href=\"#\" class=\"board__list__header__settings\"><i class=\"fa fa-gear\"></i></a>\n    </div>\n    <div class=\"board__list__body\">\n        <board-card></board-card>\n        <board-card></board-card>\n        <board-card type=\"title\"></board-card>\n        <board-card></board-card>\n        <board-card type=\"title\"></board-card>\n        <board-card></board-card>\n        <board-card-new></board-card-new>\n    </div>\n</div>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"board__list\">\n    <div class=\"board__list__header\">\n        Backlog\n        <a href=\"#\" class=\"board__list__header__settings\"><i class=\"fa fa-gear\"></i></a>\n    </div>\n    <div class=\"board__list__body\">\n        <card></card>\n        <card></card>\n        <card></card>\n        <title></title>\n        <card></card>\n        <new-card></new-card>\n    </div>\n</div>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
@@ -10159,7 +10186,7 @@ if (module.hot) {(function () {  module.hot.accept()
     hotAPI.update(id, module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
   }
 })()}
-},{"./board-card-new.vue":6,"./board-card.vue":7,"vue":3,"vue-hot-reload-api":2,"vueify-insert-css":4}],10:[function(require,module,exports){
+},{"./board-card-new.vue":6,"./board-card-title.vue":7,"./board-card.vue":8,"vue":3,"vue-hot-reload-api":2,"vueify-insert-css":4}],11:[function(require,module,exports){
 'use strict';
 
 var _board = require('./board/board.vue');
@@ -10178,6 +10205,6 @@ new Vue({
     ready: function ready() {}
 });
 
-},{"./board/board.vue":5,"vue":3}]},{},[10]);
+},{"./board/board.vue":5,"vue":3}]},{},[11]);
 
 //# sourceMappingURL=main.js.map

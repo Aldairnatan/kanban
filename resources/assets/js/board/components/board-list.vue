@@ -1,9 +1,10 @@
 <script>
-    import BoardCard from './board-card.vue';
-    import BoardCardNew from './board-card-new.vue';
+    import Card from './board-card.vue';
+    import NewCard from './board-card-new.vue';
+    import Title from './board-card-title.vue';
 
     export default {
-        components: {BoardCard, BoardCardNew}
+        components: {Card, NewCard, Title}
     };
 </script>
 
@@ -14,13 +15,12 @@
             <a href="#" class="board__list__header__settings"><i class="fa fa-gear"></i></a>
         </div>
         <div class="board__list__body">
-            <board-card></board-card>
-            <board-card></board-card>
-            <board-card type="title"></board-card>
-            <board-card></board-card>
-            <board-card type="title"></board-card>
-            <board-card></board-card>
-            <board-card-new></board-card-new>
+            <card></card>
+            <card></card>
+            <card></card>
+            <title></title>
+            <card></card>
+            <new-card></new-card>
         </div>
     </div>
 </template>
